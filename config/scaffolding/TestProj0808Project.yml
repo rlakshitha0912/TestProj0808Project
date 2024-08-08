@@ -7,3 +7,12 @@ packages:
   gitUrl: https://github.com/rlakshitha0912
   gitUsername: rlakshitha0912
   gitBranch: main
+services:
+- serviceName: project.testproj0808.integrations:date
+  packages:
+  - name: TestProj0808Project
+    version: "1.0"
+- serviceName: pub.date:getCurrentDate
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.1126
