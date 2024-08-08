@@ -7,7 +7,14 @@ packages:
   gitUrl: https://github.com/rlakshitha0912
   gitUsername: rlakshitha0912
   gitBranch: main
+- name: WmJDBCAdapter
+  wpmServer: https://packages.webmethods.io
+  wpmRegistry: softwareag
 services:
+- serviceName: project.testproj0808.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:account
+  packages:
+  - name: TestProj0808Project
+    version: "1.0"
 - serviceName: project.testproj0808.integrations:date
   packages:
   - name: TestProj0808Project
@@ -16,3 +23,50 @@ services:
   packages:
   - name: WmPublic
     version: 11.1.0.0.1126
+configurationVariables:
+  ? artConnection.TestProj0808Project.project.testproj0808.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.account.connectionSettings.keyStore
+  : ""
+  ? artConnection.TestProj0808Project.project.testproj0808.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.account.connectionSettings.password
+  : "{AES}gOk3wygfWVjWqDc4SLehnQ=="
+  ? artConnection.TestProj0808Project.project.testproj0808.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.account.connectionManagerSettings.startupRetryCount
+  : "0"
+  ? artConnection.TestProj0808Project.project.testproj0808.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.account.connectionManagerSettings.poolIncrementSize
+  : "1"
+  ? artConnection.TestProj0808Project.project.testproj0808.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.account.connectionManagerSettings.poolable
+  : "false"
+  ? artConnection.TestProj0808Project.project.testproj0808.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.account.connectionSettings.transactionType
+  : NO_TRANSACTION
+  ? artConnection.TestProj0808Project.project.testproj0808.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.account.connectionManagerSettings.blockingTimeout
+  : "1000"
+  ? artConnection.TestProj0808Project.project.testproj0808.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.account.connectionSettings.otherProperties
+  : loginTimeout=60;driverType=thin;
+  ? artConnection.TestProj0808Project.project.testproj0808.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.account.connectionSettings.serverName
+  : adapter-oracle-121-on-amazonrds.cdmjexwbzoym.us-east-1.rds.amazonaws.com
+  ? artConnection.TestProj0808Project.project.testproj0808.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.account.connectionManagerSettings.minimumPoolSize
+  : "1"
+  ? artConnection.TestProj0808Project.project.testproj0808.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.account.connectionSettings.user
+  : JDBC_BVT
+  ? artConnection.TestProj0808Project.project.testproj0808.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.account.connectionSettings.networkProtocol
+  : tcp
+  ? artConnection.TestProj0808Project.project.testproj0808.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.account.connectionSettings.databaseName
+  : ORCL
+  ? artConnection.TestProj0808Project.project.testproj0808.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.account.connectionSettings.datasourceClass
+  : com.wm.dd.jdbcx.oracle.OracleDataSource
+  ? artConnection.TestProj0808Project.project.testproj0808.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.account.connectionSettings.driverType
+  : Progress® DataDirect®
+  ? artConnection.TestProj0808Project.project.testproj0808.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.account.connectionSettings.trustStore
+  : ""
+  ? artConnection.TestProj0808Project.project.testproj0808.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.account.connectionManagerSettings.maximumPoolSize
+  : "10"
+  ? artConnection.TestProj0808Project.project.testproj0808.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.account.connectionSettings.portNumber
+  : "1521"
+  ? artConnection.TestProj0808Project.project.testproj0808.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.account.connectionEnabled
+  : "false"
+  ? artConnection.TestProj0808Project.project.testproj0808.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.account.connectionManagerSettings.heartBeatInterval
+  : "0"
+  ? artConnection.TestProj0808Project.project.testproj0808.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.account.connectionSettings.dbType
+  : ORACLE
+  ? artConnection.TestProj0808Project.project.testproj0808.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.account.connectionManagerSettings.startupBackoffSecs
+  : "10"
+  ? artConnection.TestProj0808Project.project.testproj0808.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.account.connectionManagerSettings.expireTimeout
+  : "1000"
